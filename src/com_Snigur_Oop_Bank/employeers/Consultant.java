@@ -10,15 +10,24 @@ public class Consultant extends AbstractEmployee {
     public Consultant() {
     }
 
-    public Consultant(String name) {
-        super(name);
+    public Consultant(String name, DepartmentInterface department) {
+        super(name, department);
     }
 
     public ConsultResult consult(VisitorInterface visitor){
         super.setFree(false);
+        // Когда консультант дает консультацию, он становится falce
+
         // консультант уговаривает взять кредит =)
         return ConsultResult.GETCREDIT;
     }
+
+
+    @Override //консультант будет привязан к какому-либо отделу
+    public void setDepartment(DepartmentInterface department) {
+        super.setDepartment(department);
+    }
+
 
     public void send(){
 

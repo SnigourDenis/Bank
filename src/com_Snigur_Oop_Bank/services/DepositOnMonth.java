@@ -4,13 +4,19 @@ import com_Snigur_Oop_Bank.interfaces.DepartmentInterface;
 
 public class DepositOnMonth extends AbstractServices {
 
-    private double amountMoney;
+    private double minAmountMoney;
     private float depositRate;
 
     public DepositOnMonth(String name) {
         super(name);
     }
 
+
+    public DepositOnMonth(String name, double minAmountMoney, float depositRate) {
+        super(name);
+        this.minAmountMoney = minAmountMoney;
+        this.depositRate = depositRate;
+    }
 
     public double depositOnMonth(double getAmountMoney) {
         return  getAmountMoney + getAmountMoney * depositRate;

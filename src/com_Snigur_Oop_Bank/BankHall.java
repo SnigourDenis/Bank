@@ -9,9 +9,20 @@ import java.util.ArrayList;
 
 public class BankHall {
 
-    private ArrayList<DepartmentInterface> departmentList;
     private String name;
-    private ArrayList<VisitorInterface> visitorList;
-    private Consultant consultants;
 
+    private ArrayList<DepartmentInterface> departmentList = new ArrayList<DepartmentInterface>();
+
+    private ArrayList<VisitorInterface> visitorList = new ArrayList<VisitorInterface>();
+
+    private ArrayList<DepartmentInterface> getDepartmentList(){
+        return departmentList;
+
+    }
+    public void addDepartment(DepartmentInterface department){
+        departmentList.add(department);
+    }
+    public void addVisitor(VisitorInterface visitor){
+        visitorList.add(visitor);
+    }
 }

@@ -23,6 +23,8 @@ public abstract class AbstractVisitor implements VisitorInterface{
     @Override
     public void getCredit(CreditInterface credit) {
         System.out.println(credit.getName());
+
+        //проверка
         if (credit instanceof CreditForBusiness){
             ((CreditForBusiness)credit).spendCredit();
         }

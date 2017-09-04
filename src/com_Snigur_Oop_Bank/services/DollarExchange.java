@@ -7,8 +7,9 @@ public class DollarExchange extends AbstractServices {
     private double amountMoney;
     private double exchangeRate;
 
-    public DollarExchange(String name) {
+    public DollarExchange(String name, double exchangeRate) {
         super(name);
+        this.exchangeRate = exchangeRate;
     }
 
     public double exchangeOfDollars(double amountMoney) {

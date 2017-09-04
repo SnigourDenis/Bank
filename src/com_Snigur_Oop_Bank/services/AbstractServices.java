@@ -15,6 +15,9 @@ public abstract class AbstractServices implements ServicesInterface {
         System.out.println("message = " + message);
     }
 
+    public AbstractServices() {
+    }
+
     public AbstractServices(String name) {
         this.name = name;
     }

@@ -6,7 +6,7 @@ import com_Snigur_Oop_Bank.interfaces.EmployeeInterface;
 public abstract class AbstractEmployee implements EmployeeInterface {
     private String name;
     private DepartmentInterface department;
-    private byte experience;
+    private double experience;
     private boolean free; // индикатор свободен или нет
 
 
@@ -15,6 +15,11 @@ public abstract class AbstractEmployee implements EmployeeInterface {
 
     public AbstractEmployee(String name) {
         this.name = name;
+    }
+
+    public AbstractEmployee(String name, DepartmentInterface department) {
+        this.name = name;
+        this.department = department;
     }
 
     @Override
@@ -35,11 +40,11 @@ public abstract class AbstractEmployee implements EmployeeInterface {
         this.department = department;
     }
 
-    public byte getExperience() {
+    public double getExperience() {
         return experience;
     }
 
-    public void setExperience(byte experience) {
+    public void setExperience(double experience) {
         this.experience = experience;
     }
 

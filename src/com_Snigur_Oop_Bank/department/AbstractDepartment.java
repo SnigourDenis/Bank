@@ -12,6 +12,8 @@ public abstract class AbstractDepartment implements DepartmentInterface {
     private ArrayList<EmployeeInterface> employeeList;
     private ArrayList<ServicesInterface> ServicesList;
 
+    public AbstractDepartment() {
+    }
 
     @Override
     public String getName() {
