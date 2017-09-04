@@ -8,6 +8,8 @@ public interface EmployeeInterface {
     String getName();
     DepartmentInterface getDepartment();
 
+    //  указываем сотруднику к какому отделу относится
+  void setDepartment(DepartmentInterface department);
 
     boolean isFree();
 

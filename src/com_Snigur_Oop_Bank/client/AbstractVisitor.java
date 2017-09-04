@@ -26,7 +26,7 @@ public abstract class AbstractVisitor implements VisitorInterface{
 
         //проверка
         if (credit instanceof CreditForBusiness){
-            ((CreditForBusiness)credit).spendCredit();
+            ((CreditForBusiness)credit).getCredit();
         }
     }
 

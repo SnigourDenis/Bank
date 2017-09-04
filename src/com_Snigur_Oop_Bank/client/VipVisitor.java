@@ -8,17 +8,21 @@ public class VipVisitor extends AbstractVisitor {
         super(name);
     }
 
+    public VipVisitor(String name, float discountOnCredit) {
+        super(name);
+        this.discountOnCredit = discountOnCredit;
+    }
 
     /*@Override
-    public void getCredit() {
+        public void getCredit() {
 
-        if (!chechDiscount()) {
-            super.getCredit();
-        } else {
-           //взять кредит со скидкой
+            if (!chechDiscount()) {
+                super.getCredit();
+            } else {
+               //взять кредит со скидкой
+            }
         }
-    }
-*/
+    */
     private boolean chechDiscount(){
         return discountOnCredit >0;
     }

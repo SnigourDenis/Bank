@@ -8,5 +8,7 @@ public interface ServicesInterface {
     String getName();
     String getNameOfBank();
     DepartmentInterface getDepartment();
+    void setDepartment(DepartmentInterface department);
+
 
 }

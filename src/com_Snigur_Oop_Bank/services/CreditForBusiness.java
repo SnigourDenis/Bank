@@ -1,6 +1,9 @@
 package com_Snigur_Oop_Bank.services;
 
-public class CreditForBusiness extends CreditServices {
+import com_Snigur_Oop_Bank.interfaces.CreditInterface;
+import com_Snigur_Oop_Bank.interfaces.DepartmentInterface;
+
+public class CreditForBusiness extends AbstractServices implements CreditInterface {
 
     private double minSumCredit;
     private float creditRateForBusiness;
@@ -20,4 +23,28 @@ public class CreditForBusiness extends CreditServices {
         System.out.println("Кредит потрачен!");
     }
 
+    @Override
+    public String getNameOfBank() {
+        return null;
+    }
+
+    @Override
+    public void getCredit() {
+
+    }
+
+    @Override
+    public void repayCredit() {
+
+    }
+
+    @Override
+    public DepartmentInterface getDepartment() {
+        return null;
+    }
+
+    @Override
+    public void setDepartment(DepartmentInterface department) {
+
+    }
 }

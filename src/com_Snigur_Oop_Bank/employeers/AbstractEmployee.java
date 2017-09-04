@@ -36,6 +36,8 @@ public abstract class AbstractEmployee implements EmployeeInterface {
         return department;
     }
 
+
+    @Override
     public void setDepartment(DepartmentInterface department) {
         this.department = department;
     }

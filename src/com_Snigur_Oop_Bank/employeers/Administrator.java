@@ -8,6 +8,7 @@ public class Administrator {
 
     private BankHall bankHall;
 
+    // указывает к какому торговому залу относится
     public Administrator(BankHall bankHall) { //к какому торговому залу относится
         this.bankHall = bankHall;
     }

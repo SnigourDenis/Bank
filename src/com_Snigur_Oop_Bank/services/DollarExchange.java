@@ -1,8 +1,9 @@
 package com_Snigur_Oop_Bank.services;
 
 import com_Snigur_Oop_Bank.interfaces.DepartmentInterface;
+import com_Snigur_Oop_Bank.interfaces.ServicesInterface;
 
-public class DollarExchange extends AbstractServices {
+public class DollarExchange extends AbstractServices implements ServicesInterface {
 
     private double amountMoney;
     private double exchangeRate;
@@ -33,5 +34,10 @@ public class DollarExchange extends AbstractServices {
     @Override
     public DepartmentInterface getDepartment() {
         return super.getDepartment();
+    }
+
+    @Override
+    public void setDepartment(DepartmentInterface department) {
+
     }
 }

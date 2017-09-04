@@ -3,7 +3,7 @@ package com_Snigur_Oop_Bank.services;
 import com_Snigur_Oop_Bank.interfaces.CreditInterface;
 import com_Snigur_Oop_Bank.interfaces.DepartmentInterface;
 
-public class CreditServices  implements CreditInterface{
+public class CreditServices extends AbstractServices implements CreditInterface{
     private String name;
     private String goodCreditStory;
 
@@ -16,6 +16,12 @@ public class CreditServices  implements CreditInterface{
     public String getName() {
         return name;
     }
+
+    @Override
+    public String getNameOfBank() {
+        return null;
+    }
+
     @Override
     public void getCredit(){
 
@@ -24,5 +30,17 @@ public class CreditServices  implements CreditInterface{
     @Override
     public void repayCredit(){
 
-    }; //Кредит пога
+    }
+
+    @Override
+    public DepartmentInterface getDepartment() {
+        return null;
+    }
+
+    @Override
+    public void setDepartment(DepartmentInterface department) {
+
+    }
+
+    ; //Кредит пога
 }

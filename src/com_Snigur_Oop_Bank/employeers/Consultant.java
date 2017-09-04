@@ -23,7 +23,8 @@ public class Consultant extends AbstractEmployee {
     }
 
 
-    @Override //консультант будет привязан к какому-либо отделу
+    //консультант будет привязан к какому-либо отделу
+    @Override
     public void setDepartment(DepartmentInterface department) {
         super.setDepartment(department);
     }

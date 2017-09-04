@@ -16,6 +16,7 @@ public abstract class AbstractBank implements BankInterface {
         this.creditDescription = creditDescription;
     }
 
+    //записываем колличество заявок в банк
     @Override
     public void chevkInfo() {
     requetCount++;

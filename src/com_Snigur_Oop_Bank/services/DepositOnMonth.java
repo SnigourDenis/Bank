@@ -1,8 +1,9 @@
 package com_Snigur_Oop_Bank.services;
 
 import com_Snigur_Oop_Bank.interfaces.DepartmentInterface;
+import com_Snigur_Oop_Bank.interfaces.ServicesInterface;
 
-public class DepositOnMonth extends AbstractServices {
+public class DepositOnMonth extends AbstractServices implements ServicesInterface {
 
     private double minAmountMoney;
     private float depositRate;
@@ -40,5 +41,10 @@ public class DepositOnMonth extends AbstractServices {
     @Override
     public DepartmentInterface getDepartment() {
         return super.getDepartment();
+    }
+
+    @Override
+    public void setDepartment(DepartmentInterface department) {
+
     }
 }
